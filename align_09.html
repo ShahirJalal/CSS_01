@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4em;
+        }
+        /* How to center the content (container) on the page */
+        /* Step 1: Wrap them in a div (class or id) */
+        /* step 2: set the width and masrgin auto */
+
+        /* Note: margin auto sets the same amount to both sides
+        and push the content in the minddle */
+
+        .container {
+            /* if we set width, it wont be responsive on mobile */
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .card {
+            background-color: wheat;
+            border: thistle 3px solid;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        /* how to align text (by default its align from left) */
+        .card p {
+            text-align: right;
+            text-align: center;
+            text-align: justify;
+        }
+
+        .card h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="home" class="card">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, blanditiis.</p>
+        </div>
+
+        <div id="about" class="card">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, blanditiis.</p>
+        </div>
+
+        <div id="contact" class="card">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, blanditiis.</p>
+        </div>
+    </div>
+</body>
+</html>
