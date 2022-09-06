@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        /* position values */
+        /* static: not affected by TBLR  properties and values */
+        /* relative: affected by TBLR  properties and values */
+        /* sticky: position based on the scroll bar */
+        /* fixed: its position based on the browser (view port) */
+        /* absolute: its position based on the parent element
+        (parent element should be always position relative) */
+
+        /* how to position absolute
+        step 1: the outter div or container should be position relative
+        step 2: the inner div or container should position absolute
+        note: if there is no parent element, it will consider the body as the parent element */
+
+        body {
+            height: 5000px;
+        }
+
+        .card {
+            width: 200px;
+            height: 200px;
+        }
+
+        #card-1 {
+            position: relative;
+            background-color: coral;
+            left: 150px;
+            top: 100px;
+            z-index: 1;
+        }
+
+        .container {
+            position: relative;
+            background-color: cornflowerblue;
+            height: 500px;
+            width: 500px;
+        }
+
+        #card-2 {
+            position: absolute;
+            background-color: crimson;
+            top: 100px;
+            left: 50px;
+        }
+
+        #card-3 {
+            position: absolute;
+            background-color: darkcyan;
+            bottom: 100px;
+            right: 50px;
+        }
+        #card-4 {
+            position: fixed;
+            background-color: yellow;
+        }
+
+        #card-5 {
+            position: sticky;
+            background-color: darkorchid;
+        }
+    </style>
+</head>
+<body>
+    <div id="card-1" class="card"></div>
+
+    <div class="container">
+        <div id="card-2" class="card"></div>
+        <div id="card-3" class="card"></div>
+    </div>
+
+    <div id="card-4" class="card"></div>
+    <div id="card-5" class="card"></div>
+</body>
+</html>
