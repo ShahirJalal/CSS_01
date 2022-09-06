@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block and Inline display</title>
+    <style>
+        /* 3 types of display: inline, block, inline-block */
+
+        li {
+            display: inline;
+        }
+
+        li a {
+            padding-right: 20px;
+            text-decoration: none;
+        }
+
+        img {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .card {
+            width: 33%;
+            display: inline-block;
+            background: skyblue;
+            color:  snow;
+            border: steelblue 3px solid;
+            padding-right: 5px;
+            margin: 5px auto;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="a">Software Engineering</a></li>
+        <li><a href="a">Digital Marketing</a></li>
+        <li><a href="a">Cyber Security</a></li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <img src="/img.jpg" alt="" width="300px" height="200px">
+    <img src="/img.jpg" alt="" width="300px" height="200px">
+
+    <div class="card">
+        <h2>heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, perferendis.</p>
+    </div>
+    <div class="card">
+        <h2>heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, perferendis.</p>
+    </div>
+    <div class="card">
+        <h2>heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, perferendis.</p>
+    </div>
+</body>
+</html>
