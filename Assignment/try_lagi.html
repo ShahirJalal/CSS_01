@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            background: url(/img2.jpg);
+        }
+        .navigation-menu {
+            float: right;
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #primary {
+            text-decoration: none;
+            color: white;
+            background-color: green;
+            font-size: 16px;
+            padding: 5px 20px;
+            border-radius: 3px;
+        }
+
+        #secondary {
+            text-decoration: none;
+            color: white;
+            padding: 5px 20px;
+        }
+
+        .center-text {
+            color: snow;
+        }
+
+        .search-box {
+            color: snow;
+            border-style: solid;
+        }
+
+        img {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .copyright-card {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            color: black;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <img src="/logo.jpg" alt="" width="30px" height="30px">
+    </div>
+    <div class="navigation-menu">
+        <ul>
+            <a href="a" id="primary">Home</a>
+            <a href="a" id="primary">Menu</a>
+            <a href="a" id="primary">Gallery</a>
+            <a href="a" id="secondary">About</a>
+            <a href="a" id="secondary">Contacts</a>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="center-text">
+            <h1 id="main-header">New Technology</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <br>
+        <div class="search-box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, natus.</p>
+        </div>
+    </div>
+
+    <div class="copyright-card">
+        <p>Copyright &copy;2022</p>
+    </div>
+
+</body>
+</html>
